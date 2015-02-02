@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kickstartlab.android.mmm.fragments.MerchantListFragment">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SearchView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchView"
+            android:layout_gravity="right|top"
+            android:gravity="right"
+            android:iconifiedByDefault="true" />
+
+        <SearchView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchDateView"
+            android:visibility="gone"
+            android:layout_gravity="right|top"
+            android:gravity="right"
+            android:queryHint="delivery date"
+            android:iconifiedByDefault="true" />
+
+        </LinearLayout>
+
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+</LinearLayout>

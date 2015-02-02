@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+        <item name="android:colorPrimary">@color/primary_color</item>
+        <item name="android:colorPrimaryDark">@color/primary_color_dark</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+        <item name="android:colorAccent">@color/accent_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="spbStyle">@style/GPlusProgressBar</item>
+        <item name="popupMenuStyle">@style/PopupMenuStyle</item>
+        <item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
+    </style>
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+    <style name="GPlusProgressBar" parent="SmoothProgressBar">
+        <item name="spb_stroke_separator_length">12dp</item>
+        <item name="spb_sections_count">4</item>
+        <item name="spb_speed">0.7</item>
+        <item name="spb_mirror_mode">false</item>
+        <item name="spb_interpolator">spb_interpolator_linear</item>
+        <item name="spb_colors">@array/gplus_colors</item>
+    </style>
+    <style name="PopupMenuStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+    <style name="ContextMenuButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_context_menu</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

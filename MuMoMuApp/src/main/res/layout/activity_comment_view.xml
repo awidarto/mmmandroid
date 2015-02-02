@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/com.kickstartlab.android.mmm.ui.RelativeHeightImageView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.kickstartlab.android.mmm.activities.FeedViewActivity">
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.kickstartlab.android.mmm.ui.RelativeHeightImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                custom:height_multiplier="0.3f"
+                android:id="@+id/head_image" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatarpic"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:border_width="2dp"
+                app:border_color="@color/dark_red"
+                android:src="@drawable/default_cover_small"
+                android:layout_margin="8dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/media_title"
+                android:text="Media Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:paddingTop="4dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="2dp" />
+            <TextView
+                android:id="@+id/status_text"
+                android:text="common text"
+                android:textStyle="normal"
+                android:textSize="11sp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            </LinearLayout>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/comment_list"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent" >
+    </ListView>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <at.markushi.ui.CircleButton
+            android:id="@+id/send_comment"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:src="@drawable/ic_send_white_18dp"
+            app:cb_color="@color/primary_color"
+            app:cb_pressedRingWidth="8dip" />
+
+    </LinearLayout>
+
+</LinearLayout>

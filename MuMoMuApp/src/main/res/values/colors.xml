@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#FFF44336</color>
+    <color name="primary_color_dark">#FFD32F2F</color>
+    <color name="primary_color_light">#FFFFCDD2</color>
+    <color name="accent_color">#FFFF5722</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="orange">#FFFF5722</color>
+    <color name="green">#FF6e8b3d</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="darkgrey">#FF555555</color>
+    <color name="dark_red">#ff770409</color>
+    <color name="lighter_red">#ffcb0000</color>
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+
+    <color name="btn_default_light_normal">#00000000</color>
+    <color name="btn_default_light_pressed">#40ffffff</color>
+    <color name="btn_send_normal">#02c754</color>
+    <color name="btn_send_pressed">#006633</color>
+    <color name="btn_default_shadow">#99000000</color>
+    <color name="btn_context_menu_normal">#ffffff</color>
+    <color name="btn_context_menu_pressed">#40000000</color>
+    <color name="btn_context_menu_text_red">#ffff0000</color>
+
+</resources>
